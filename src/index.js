@@ -1,5 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+// https://chriscourses.com/blog/loading-fonts-webpack
+// https://www.codegrepper.com/code-examples/javascript/add+image+in+react+native
+import './fonts/ionicons.eot';
+import './fonts/ionicons.svg';
+import './fonts/ionicons.ttf';
+import './fonts/ionicons.woff';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'jquery/src/jquery';
+import 'bootstrap/dist/js/bootstrap.min.js';
+// import '../node_modules/bootstrap/dist/js/bootstrap.min';
+import './css/style.css';
+
 import './index.css';
 import App from './App';
 // import * as serviceWorker from './serviceWorker';
