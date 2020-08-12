@@ -1,24 +1,24 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-// https://chriscourses.com/blog/loading-fonts-webpack
-// https://www.codegrepper.com/code-examples/javascript/add+image+in+react+native
-import './fonts/ionicons.eot';
-import './fonts/ionicons.svg';
-import './fonts/ionicons.ttf';
-import './fonts/ionicons.woff';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import 'jquery/src/jquery';
-import 'bootstrap/dist/js/bootstrap.min.js';
-// import '../node_modules/bootstrap/dist/js/bootstrap.min';
-import './css/style.css';
+import ScriptTag from 'react-script-tag';
 
 import './index.css';
 import App from './App';
 // import * as serviceWorker from './serviceWorker';
 
+const Demo = props => (
+    <>
+    <ScriptTag type="text/javascript" src="./scripts/jquery-3.1.1.min.js" />
+    <ScriptTag type="text/javascript" src="./scripts/bootstrap.min.js" />
+    <ScriptTag type="text/javascript" src="./scripts/script.js" />
+    </>
+);
+console.log(Demo);
+
 ReactDOM.render(
   <React.StrictMode>
     <App />
+    <Demo />
   </React.StrictMode>,
   document.getElementById('root')
 );
