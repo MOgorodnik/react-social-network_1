@@ -1,4 +1,13 @@
+const webpack = require('webpack');
+
 module.exports = {
+    plugins:[
+        new webpack.ProvidePlugin({
+            $: 'jquery/dist/jquery.min.js',
+            jQuery: 'jquery/dist/jquery.min.js',
+            'window.jQuery': 'jquery/dist/jquery.min.js',
+        })
+    ],
     module: {
         rules: [
             {

@@ -8,20 +8,22 @@ import ReactDOM from 'react-dom';
 // how import js 4 ways
 // https://medium.com/better-programming/4-ways-of-adding-external-js-files-in-reactjs-823f85de3668
 
+// import our fonts
 import './fonts/ionicons.eot';
 import './fonts/ionicons.svg';
 import './fonts/ionicons.ttf';
 import './fonts/ionicons.woff';
-import 'bootstrap/dist/css/bootstrap.min.css';
-// import 'bootstrap/dist/js/bootstrap.min.js';
-import $ from "jquery";
+
+// include jQuery
 import 'jquery/src/jquery';
-import 'bootstrap/dist/js/bootstrap';
+// import 'bootstrap/dist/js/bootstrap';
+// include bootstrap
+
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 import './index.css';
-import App from './App';
-// import * as serviceWorker from './serviceWorker';
 
+import App from './App';
 // const Demo = props => (
 //     <>
 //     <ScriptTag type="text/javascript" src="./scripts/jquery-3.1.1.min.js" />
@@ -30,6 +32,10 @@ import App from './App';
 //     </>
 // );
 // console.log(Demo);
+
+// import * as serviceWorker from './serviceWorker';
+
+let $ = require("jquery");
 console.log($);
 
 ReactDOM.render(
