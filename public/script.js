@@ -1,5 +1,5 @@
 'use strict'
-
+// I am script from public folder
 //Preloader
 var preloader = $('#spinner-wrapper');
 $(window).on('load', function() {
