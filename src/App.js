@@ -1,5 +1,5 @@
 import "bootstrap/dist/css/bootstrap.min.css";
-import React, { Component } from "react";
+import React, { Component, useEffect } from "react";
 
 import Alert from "react-bootstrap/lib/Alert";
 import Button from "react-bootstrap/lib/Button";
@@ -13,11 +13,12 @@ import './fonts/ionicons.woff';
 import './App.css';
 import Header from './components/header/Header'
 import Navbar from './components/navbar/Navbar'
-import Preloader from './components/preloader1/Preloader'
+// import Preloader from './components/preloader1/Preloader'
 
-function App() {
-
-    const [loading, setLoading] = useState(true);
+function App(props) {
+    console.log(props);
+    const {hideLoader, showLoader} = props;
+    useEffect(hideLoader, []);
 
     return (
         <>
@@ -32,7 +33,7 @@ function App() {
                 </Alert>
                 11
             </div>
-            <Preloader />
+            {/*<Preloader />*/}
         </>
     );
 }
