@@ -377,6 +377,10 @@ textarea{
   margin: 12px 0;
 }
 
+.menu .navbar-form form{
+  margin: 4px 0;
+}
+
 .menu form .form-group{
   position:relative;
 }
@@ -444,6 +448,14 @@ textarea{
 }
 
 .navbar-default .navbar-collapse, .navbar-default .navbar-form{
+  border: 0;
+}
+
+.menu .dropdown .caret{
+  content: url('img/down-arrow.png');
+  /* background: red; */
+  width: 9px;
+  height: 6px;
   border: 0;
 }
 
